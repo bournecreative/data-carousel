@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "title": "DJI Mini 2",
+    "TakeoffWeight": "< 249 g",
+    "MaxDescentSpeed": "3.5 m/s (S Mode)",
+    "MaxFlightTime": "31 mins",
+    "colors": [
+      {"color": "white"},
+      {"color": "grey"}],
+    "cta": "Learn more",
+    "ctaUrl": "https://www.dji.com/mini-2"
+  },
+  {
+    "id": 2,
+    "title": "Mavic Air 2",
+    "TakeoffWeight": "570g",
+    "MaxDescentSpeed": "3 m/s (S Mode)",
+    "MaxFlightTime": "34 mins",
+    "colors": [
+      {"color": "white"},
+      {"color": "grey"},
+      {"color": "dark-grey"}],
+    "cta": "Learn more",
+    "ctaUrl": "https://www.dji.com/mavic-air-2"
+  },
+  {
+    "id": 3,
+    "title": "DJI Mini SE",
+    "TakeoffWeight": "< 249 g",
+    "MaxDescentSpeed": "3 m/s (S Mode)",
+    "MaxFlightTime": "30 mins",
+    "colors": [{"color":"grey"}],
+    "cta": "Learn more",
+    "ctaUrl": "https://www.dji.com/mini-se"
+  },
+  {
+    "id": 4,
+    "title": "Mavic 2",
+    "TakeoffWeight": "907 g",
+    "MaxDescentSpeed": "3 m/s (S Mode)",
+    "MaxFlightTime": "29 mins",
+    "colors": [{"color":"charcoal"}],
+    "cta": "Learn more",
+    "ctaUrl": "https://www.dji.com/mavic-2"
+  },
+  {
+    "id": 5,
+    "title": "Mavic Air 2",
+    "TakeoffWeight": "507 g",
+    "MaxDescentSpeed": "3 m/s (S Mode)",
+    "MaxFlightTime": "34 mins",
+    "colors": [
+      {"color": "charcoal"},
+      {"color": "white"}],
+    "cta": "Learn more",
+    "ctaUrl": "https://www.dji.com/mavic-air-2/specs"
+  }
+]
+

@@ -1,0 +1,21 @@
+.content-wrapper {
+  p {
+    box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
+    margin: 0;
+    padding: 12px 0;
+    &:last-of-type {
+      box-shadow: 0 1px 0 0 #212121;
+    }
+    &:first-of-type {
+      box-shadow: 0 -2px 0 0 #212121;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 21px;
+    box-shadow: 0 0 0 1px #212121;
+    padding: 10px 24px;
+    margin: 12px 0;
+  }
+}
