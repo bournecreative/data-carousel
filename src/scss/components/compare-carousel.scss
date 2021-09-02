@@ -1,21 +1,72 @@
-.content-wrapper {
-  p {
-    box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
-    margin: 0;
-    padding: 12px 0;
-    &:last-of-type {
-      box-shadow: 0 1px 0 0 #212121;
-    }
-    &:first-of-type {
-      box-shadow: 0 -2px 0 0 #212121;
-    }
+.dc__carousel {
+  .slick-prev.slick-arrow {
+    display: none !important;
   }
 
-  .button {
-    display: inline-block;
-    border-radius: 21px;
-    box-shadow: 0 0 0 1px #212121;
-    padding: 10px 24px;
-    margin: 12px 0;
+  .slick-next.slick-arrow {
+    top: initial;
+    bottom: 32px;
+  }
+
+  .dc__slide {
+    .dc__palette {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 20px 0;
+
+      li {
+        display: inline-block;
+        padding-left: 10px;
+      }
+
+      .dc__palette-color {
+        border-radius: 50%;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+      }
+
+      .eggShell {
+        background: #f4f7f2;
+      }
+
+      .charcoal {
+        background: #3c3d3c;
+      }
+
+      .grey {
+        background: #d1d4cf;
+      }
+    }
+
+    .dc__line-item {
+      box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
+      margin: 0;
+      padding: 12px 0;
+      &:first-of-type {
+        box-shadow: 0 -2px 0 0 #212121;
+      }
+      &:last-of-type {
+        box-shadow: 0 1px 0 0 #212121;
+      }
+    }
+
+    .dc__cta {
+      background: #212121;
+      border-radius: 21px;
+      box-shadow: 0 0 0 1px #212121;
+      color: #f4f7f2;
+      display: inline-block;
+      margin: 32px 0;
+      padding: 10px 24px;
+      text-decoration: none;
+      transition: 500ms ease-out;
+      &.active {
+        color: #212121;
+      }
+      &:hover {
+        background: #3c3d3c;
+      }
+    }
   }
 }
