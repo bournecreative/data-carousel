@@ -1,15 +1,27 @@
-.dc__carousel {
+.carousel__comparison {
+  height: 350px;
+
   .slick-prev.slick-arrow {
     display: none !important;
   }
 
   .slick-next.slick-arrow {
-    top: initial;
-    bottom: 32px;
+    display: none !important;
   }
 
-  .dc__slide {
-    .dc__palette {
+  .carousel__slide {
+    height: 100%;
+
+    .carousel__slide-header {
+      height: 120px;
+    }
+
+    .carousel__slide-title {
+      margin: 0;
+      padding-bottom: 12px;
+    }
+
+    .carousel__slide-palette {
       list-style-type: none;
       margin: 0;
       padding: 0 0 20px 0;
@@ -19,27 +31,27 @@
         padding-left: 10px;
       }
 
-      .dc__palette-color {
+      .carousel__palette-color {
         border-radius: 50%;
         display: inline-block;
         height: 20px;
         width: 20px;
       }
 
-      .eggShell {
+      .carousel__palette-color--eggshell {
         background: #f4f7f2;
       }
 
-      .charcoal {
+      .carousel__palette-color--charcoal {
         background: #3c3d3c;
       }
 
-      .grey {
+      .carousel__palette-color--grey {
         background: #d1d4cf;
       }
     }
 
-    .dc__line-item {
+    .carousel__line-item {
       box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
       margin: 0;
       padding: 12px 0;
@@ -51,16 +63,18 @@
       }
     }
 
-    .dc__cta {
+    .carousel__slide-cta {
       background: #212121;
       border-radius: 21px;
       box-shadow: 0 0 0 1px #212121;
       color: #f4f7f2;
       display: inline-block;
+      font-size: 12px;
       margin: 32px 0;
-      padding: 10px 24px;
+      padding: 7px 15px;
       text-decoration: none;
       transition: 500ms ease-out;
+      white-space: nowrap;
       &.active {
         color: #212121;
       }

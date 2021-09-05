@@ -123,7 +123,8 @@
   display: block;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .slick-track {
   display: block;
@@ -131,7 +132,8 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 .slick-prev.slick-arrow,
 .slick-next.slick-arrow {
@@ -190,53 +192,59 @@
       outline: none;
       width: 25px; }
 
-.dc__carousel .slick-prev.slick-arrow {
-  display: none !important; }
-
-.dc__carousel .slick-next.slick-arrow {
-  top: initial;
-  bottom: 32px; }
-
-.dc__carousel .dc__slide .dc__palette {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 20px 0; }
-  .dc__carousel .dc__slide .dc__palette li {
-    display: inline-block;
-    padding-left: 10px; }
-  .dc__carousel .dc__slide .dc__palette .dc__palette-color {
-    border-radius: 50%;
-    display: inline-block;
-    height: 20px;
-    width: 20px; }
-  .dc__carousel .dc__slide .dc__palette .eggShell {
-    background: #f4f7f2; }
-  .dc__carousel .dc__slide .dc__palette .charcoal {
-    background: #3c3d3c; }
-  .dc__carousel .dc__slide .dc__palette .grey {
-    background: #d1d4cf; }
-
-.dc__carousel .dc__slide .dc__line-item {
-  box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
-  margin: 0;
-  padding: 12px 0; }
-  .dc__carousel .dc__slide .dc__line-item:first-of-type {
-    box-shadow: 0 -2px 0 0 #212121; }
-  .dc__carousel .dc__slide .dc__line-item:last-of-type {
-    box-shadow: 0 1px 0 0 #212121; }
-
-.dc__carousel .dc__slide .dc__cta {
-  background: #212121;
-  border-radius: 21px;
-  box-shadow: 0 0 0 1px #212121;
-  color: #f4f7f2;
-  display: inline-block;
-  margin: 32px 0;
-  padding: 10px 24px;
-  text-decoration: none;
-  transition: 500ms ease-out; }
-  .dc__carousel .dc__slide .dc__cta.active {
-    color: #212121; }
-  .dc__carousel .dc__slide .dc__cta:hover {
-    background: #3c3d3c; }
+.carousel__comparison {
+  height: 350px; }
+  .carousel__comparison .slick-prev.slick-arrow {
+    display: none !important; }
+  .carousel__comparison .slick-next.slick-arrow {
+    display: none !important; }
+  .carousel__comparison .carousel__slide {
+    height: 100%; }
+    .carousel__comparison .carousel__slide .carousel__slide-header {
+      height: 120px; }
+    .carousel__comparison .carousel__slide .carousel__slide-title {
+      margin: 0;
+      padding-bottom: 12px; }
+    .carousel__comparison .carousel__slide .carousel__slide-palette {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 0 20px 0; }
+      .carousel__comparison .carousel__slide .carousel__slide-palette li {
+        display: inline-block;
+        padding-left: 10px; }
+      .carousel__comparison .carousel__slide .carousel__slide-palette .carousel__palette-color {
+        border-radius: 50%;
+        display: inline-block;
+        height: 20px;
+        width: 20px; }
+      .carousel__comparison .carousel__slide .carousel__slide-palette .carousel__palette-color--eggshell {
+        background: #f4f7f2; }
+      .carousel__comparison .carousel__slide .carousel__slide-palette .carousel__palette-color--charcoal {
+        background: #3c3d3c; }
+      .carousel__comparison .carousel__slide .carousel__slide-palette .carousel__palette-color--grey {
+        background: #d1d4cf; }
+    .carousel__comparison .carousel__slide .carousel__line-item {
+      box-shadow: 0 1px 0 0 #212121, 0 -1px 0 0 #212121;
+      margin: 0;
+      padding: 12px 0; }
+      .carousel__comparison .carousel__slide .carousel__line-item:first-of-type {
+        box-shadow: 0 -2px 0 0 #212121; }
+      .carousel__comparison .carousel__slide .carousel__line-item:last-of-type {
+        box-shadow: 0 1px 0 0 #212121; }
+    .carousel__comparison .carousel__slide .carousel__slide-cta {
+      background: #212121;
+      border-radius: 21px;
+      box-shadow: 0 0 0 1px #212121;
+      color: #f4f7f2;
+      display: inline-block;
+      font-size: 12px;
+      margin: 32px 0;
+      padding: 7px 15px;
+      text-decoration: none;
+      transition: 500ms ease-out;
+      white-space: nowrap; }
+      .carousel__comparison .carousel__slide .carousel__slide-cta.active {
+        color: #212121; }
+      .carousel__comparison .carousel__slide .carousel__slide-cta:hover {
+        background: #3c3d3c; }
 

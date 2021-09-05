@@ -2,7 +2,7 @@ import data from "../../data/carouselData.json"
 
 const compareCarousel = {
     init() {
-        const dataCarousel = document.querySelector('.dc__carousel')
+        const dataCarousel = document.querySelector('.carousel__comparison')
         if (!dataCarousel) {
             return
         }
@@ -10,28 +10,35 @@ const compareCarousel = {
     },
     carouselBuiler(data, template) {
         let html = ``;
-        data.map(obj => {
+        data.productDetails.map(obj => {
             html += template(obj)
         })
         return html
     },
     carouselTemplate(obj) {
         const template = `
-            <div class="dc__slide">
-                <h2>${obj.title}</h2>
-                <ul class="dc__palette">${generateColors(obj.colors)}</ul>
-                    <p class="dc__line-item">${obj.TakeoffWeight}</p>
-                    <p class="dc__line-item">${obj.MaxDescentSpeed}</p>
-                    <p class="dc__line-item">${obj.MaxFlightTime}</p>
-                <div>
-                <a class="dc__cta" href="${obj.ctaUrl}">${obj.cta}</a>
+            <div class="carousel__slide">
+                <div class="carousel__slide-content">
+                    <div class="carousel__slide-header">
+                        <h2 class="carousel__slide-title">${obj.title ? "obj.title" : ""}</h2>
+                        <ul class="carousel__slide-palette">${obj.colors ? generateColors(obj.colors) : ""}</ul>
+                    </div>
+                    <div class="carousel__slide-body">
+                        <p class="carousel__line-item">${obj.TakeoffWeight ? obj.TakeoffWeight : ""}</p>
+                        <p class="carousel__line-item">${obj.MaxDescentSpeed ? obj.MaxDescentSpeed : ""}</p>
+                        <p class="carousel__line-item">${obj.MaxFlightTime ? obj.MaxFlightTime : ""}</p>
+                        <div>
+                            ${obj.ctaUrl ? `<a class="carousel__slide-cta" href="${obj.ctaUrl ? obj.ctaUrl : ""}">${obj.cta ? obj.cta : ""}</a>` : ''}
+                        </div>
+                    </div>
                 </div>
-            </div >`
+            </div>
+            `
 
         function generateColors(arr) {
             let html = ``
             arr.map((color) => {
-                html += `<li><span class="${color} dc__palette-color"></span></li>`
+                html += `<li><span class="${color} carousel__palette-color"></span></li>`
             })
             return html
         }

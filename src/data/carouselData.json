@@ -5,7 +5,7 @@
     "TakeoffWeight": "< 249 g",
     "MaxDescentSpeed": "3.5 m/s (S Mode)",
     "MaxFlightTime": "31 mins",
-    "colors": [ "eggShell", "grey"],
+    "colors": [ "carousel__palette-color--eggshell", "carousel__palette-color--grey"],
     "cta": "Learn more",
     "ctaUrl": "https://www.dji.com/mini-2"
   },
@@ -15,7 +15,7 @@
     "TakeoffWeight": "570g",
     "MaxDescentSpeed": "3 m/s (S Mode)",
     "MaxFlightTime": "34 mins",
-    "colors": [ "eggShell", "grey", "charcoal"],
+    "colors": [ "carousel__palette-color--eggshell", "carousel__palette-color--grey", "carousel__palette-color--charcoal"],
     "cta": "Learn more",
     "ctaUrl": "https://www.dji.com/mavic-air-2"
   },
@@ -25,7 +25,7 @@
     "TakeoffWeight": "< 249 g",
     "MaxDescentSpeed": "3 m/s (S Mode)",
     "MaxFlightTime": "30 mins",
-    "colors": ["grey", "charcoal"],
+    "colors": ["carousel__palette-color--grey", "carousel__palette-color--charcoal"],
     "cta": "Learn more",
     "ctaUrl": "https://www.dji.com/mini-se"
   },
@@ -35,7 +35,7 @@
     "TakeoffWeight": "907 g",
     "MaxDescentSpeed": "3 m/s (S Mode)",
     "MaxFlightTime": "29 mins",
-    "colors": [ "eggShell"],
+    "colors": [ "carousel__palette-color--eggshell"],
     "cta": "Learn more",
     "ctaUrl": "https://www.dji.com/mavic-2"
   },
@@ -45,9 +45,11 @@
     "TakeoffWeight": "507 g",
     "MaxDescentSpeed": "3 m/s (S Mode)",
     "MaxFlightTime": "34 mins",
-    "colors": [ "eggShell", "grey", "charcoal"],
+    "colors": [ "carousel__palette-color--eggshell", "carousel__palette-color--grey", "carousel__palette-color--charcoal"],
     "cta": "Learn more",
     "ctaUrl": "https://www.dji.com/mavic-air-2/specs"
   }
 ]
+
+
 
